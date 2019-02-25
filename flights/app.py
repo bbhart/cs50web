@@ -22,5 +22,16 @@ def index():
     flights = db.execute("SELECT * from flights").fetchall()
     return render_template("index.html", flights=flights)
 
+@app.route("/flights/<int:flight_id>")
+def flight(flight_id):
+
+    flight = db.execute("SELECT * from flights where flightno = :id", { "id" : flight_id}).fetchone()
+
+    if flight is None:
+        return render_template("error.html", message="Flight does not exist.")
+
+    return render_template("flight.html", flight=flight)
+
+
 
 

@@ -4,7 +4,7 @@
 {% block body %}
 <ul>
     {% for flight in flights %}
-    <li/>{{ flight.origin }} to {{ flight.dest }} ({{ flight.duration}} mins)
+    <li/>(<a href="{{ url_for('flight', flight_id=flight.flightno) }}">{{ flight.flightno }}</a>) {{ flight.origin }} to {{ flight.dest }} ({{ flight.duration}} mins)
     {% endfor %}
 
 </ul>

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block header %}Information for Flight #{{ flight.flightno }}{% endblock %}
+{% block body %}
+<ul>
+    <li/>Departs from: {{ flight.origin }}
+    <li/>Destination: {{ flight.dest }}
+    <li/>Duration: {{ flight.duration}} mins
+</ul>
+{% endblock %}
