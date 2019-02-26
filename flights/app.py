@@ -32,6 +32,10 @@ def flight(flight_id):
 
     return render_template("flight.html", flight=flight)
 
+@app.route("/book", methods=["POST"])
+def book():
+    name = request.form.get("name")
 
+    
 
 

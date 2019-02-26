@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block header %}Flight Information and Booking{% endblock %}
+{% block body %}
+<form action="{{ url_for('book') }}" method="post">
+    <select name="flightno">
+        {% for flight in flights %}
+        <option value="{{ flight.flightno }}">#{{ flight.flightno }}: {{ flight.origin }} to {{ flight.dest }}</option>
+        {% endfor %}
+    </select>
+</form>
+{% endblock %}
