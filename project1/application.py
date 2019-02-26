@@ -2,6 +2,7 @@ import os
 
 from flask import Flask, session
 from flask_session import Session
+from flask_bootstrap import Bootstrap
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
@@ -21,6 +22,7 @@ from six.moves.urllib.parse import urlencode
 
 # Instantiate Flask
 app = Flask(__name__)
+Bootstrap(app)
 
 # Check for Auth0 client secret
 if not os.getenv("AUTH0_SECRET"):
@@ -73,7 +75,7 @@ def requires_auth(f):
 
 @app.route("/")
 def index():
-    return "Project 1: TODO"
+    return render_template("index.html")
 
 @app.route('/callback')
 def callback_handling():
