@@ -22,7 +22,6 @@ from six.moves.urllib.parse import urlencode
 
 # Instantiate Flask
 app = Flask(__name__)
-Bootstrap(app)
 
 # Check for Auth0 client secret
 if not os.getenv("AUTH0_SECRET"):
