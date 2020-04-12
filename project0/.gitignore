@@ -1,5 +1,0 @@
-setenv.cmd
-.terraform/**
-terraform.tfstate*
-build
-
