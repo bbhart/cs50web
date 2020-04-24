@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>CS50 Project 0 - Coronavirus Journal</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Hart</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="corona.html">Coronavirus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="photos.html">Photos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Content -->
+
+    <div class="container">
+    
+      <div id="readme" class="Box-body readme blob js-code-block-container px-5">
+        <article class="markdown-body entry-content" itemprop="text"><h1>COVID-19 Journal</h1>
+    <p>My own journal of links, thoughts, and experiences around COVID-19.</p>
+    <h2>General</h2>
+    <ol>
+    <li>Link: <a href="https://www.linkedin.com/feed/news/coronavirus-official-updates-4513283/" rel="nofollow">LinkedIn curated list of COVID-19 news</a></li>
+    <li>Link: <a href="https://covid-19.direct/US" rel="nofollow">COVID-19 Direct</a>. One of the best trackers I've come across so far. Includes additional data like hospital/bed/ICU capacity.</li>
+    <li>Link: <a href="https://covid19.healthdata.org/projections" rel="nofollow">IMHE - HealthData</a>.</li>
+    <li>Link: <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" rel="nofollow">Johns Hopkins CSSE Tracker</a>. Dashboard style tracker.</li>
+    <li>Link: <a href="https://apps.apple.com/us/app/apple-covid-19/id1504132184" rel="nofollow">Apple's COVID-19 app</a>.</li>
+    </ol>
+    <h2>Mar 30, 2020</h2>
+    <p>Took a few days off from the journal.</p>
+    <p>At this point, I can't imagine the kids will go back to school this school year. We'll miss all those spring activities we usually look forward to, plus my son's graduation from elementary school this year. Actually... will they even graduate? They won't have fulfilled the requirements to move on. Will curriculums nationwide flex to accomodate these kids missing several months of fundamental education? Questions, questions.</p>
+    <p>As for work, I wouldn't expect to be back in an office for at least six more weeks, putting us into the middle of May. I do spend a lot of time wondering what lessons LinkedIn and other Bay Area companies will learn from this, and how it will impact the culture. One would have to assume meal service in its current form would be discontinued, though perhaps there would be prepackaged takeaway food available. Gyms shuttered, too. Further, the large tech companies tend <strong>not</strong> to be fans of hiring remote engineers (though good workers are sometimes allowed to transition from office to remote after a few years in the office), and at my company, as far as I'm aware, there are no work-from-home engineering managers (well, technically, there are currently hundreds, but it's strongly embedded in the culture that managing is done from offices).</p>
+    <p>It's a little premature to be wondering about going back to the office, I know. I will say that my own team has done a stellar job of keeping projects moving forward from home during these difficult times, and I'm fortunate to manage these dedicated engineers.</p>
+    <p>Switching gears.</p>
+    <p>As of March 29, Santa Clara County had recorded 848 total cases and 28 deaths. (<em>Note from the county: The 202 new confirmed cases reported today include some results that were not previously reported over the past two days. This increase reflects a reporting delay, not necessarily a significant single day increase.</em>)</p>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-30-sccdashboard.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-30-sccdashboard.png" alt="SCC Dashboard, current as of March 29" style="max-width:100%;"></a></p>
+    <p>This <strong>United States</strong> dashboard from <a href="https://covid19.healthdata.org/projections" rel="nofollow">HealthData.org</a> shows that the country will face a severe bed and ICU bed shortage within the next two weeks.</p>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-30-healthdatadashboard.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-30-healthdatadashboard.png" alt="USA-wide dashboard shows bed and ICU bed shortage predictions" style="max-width:100%;"></a></p>
+    <p>This <strong>California</strong> dashboard from the same site shows no predicted shortages of beds or ICU beds. The quick way to read this is that you <strong>don't</strong> want the dotted line (predicted need) to go higher than the solid line of the same color (availability).</p>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-30-sccdashcalifornia.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-30-sccdashcalifornia.png" alt="California map shows resources under control" style="max-width:100%;"></a></p>
+    <p>Then compare to <strong>New York</strong>, which is astonishing.</p>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-30-sccdashnewyork.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-30-sccdashnewyork.png" alt="New York map shows resources vastly overwhelmed" style="max-width:100%;"></a></p>
+    <p>One other note about these projections: "The projections assume the continuation of strong social distancing measures and other protective measures." There are still states not taking as hard a line as others.</p>
+    <p>Links:</p>
+    <ul>
+    <li>
+    <p><a href="https://www.washingtonpost.com/national/coronavirus-deaths-warning-america/2020/03/30/522221ce-72a6-11ea-87da-77a8136c1a6d_story.html" rel="nofollow">Washington Post: Coronavirus pandemic could kill as many as 200,000 in U.S., White House warns</a>. "The White House’s coronavirus coordinator on Monday warned that the pandemic could kill as many as 200,000 Americans in even a best-case scenario as state officials intensified their stay-at-home directives — further erasing any hope that the country would have a speedy recovery from the global health crisis."</p>
+    </li>
+    <li>
+    <p><a href="https://www.fox13news.com/news/tampa-megachurch-crowded-with-worshipers-despite-social-distancing-orders" rel="nofollow">Fox 13 Tampa Bay: Tampa megachurch crowded with worshipers, despite social distancing orders</a> quickly followed by <a href="https://www.tampabay.com/news/health/2020/03/30/tampa-church-holds-packed-service-draws-warning-from-sheriffs-office/" rel="nofollow">Tampa Bay Times: Pastor of Tampa church that held two large Sunday services arrested, jailed</a>.</p>
+    </li>
+    <li>
+    <p><a href="https://www.bloomberg.com/news/articles/2020-03-27/abbott-launches-5-minute-covid-19-test-for-use-almost-anywhere" rel="nofollow">Bloomberg: Abbott Launches 5-Minute Virus Test for Use Almost Anywhere</a>.</p>
+    </li>
+    <li>
+    <p><a href="https://www.independent.ie/world-news/coronavirus/two-metres-not-enough-when-social-distancing-39083182.html" rel="nofollow">Independent.ie: 'Two metres not enough' when social distancing</a>. "The two-metre social distancing rule being used to keep people apart may need to be four times bigger to prevent coronavirus from spreading, a new study suggests."</p>
+    </li>
+    <li>
+    <p><a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/" rel="nofollow">American Enterprise Institute: National coronavirus response: A road map to reopening</a>. How might we get back to business once COVID-19 is under control?</p>
+    </li>
+    <li>
+    <p><a href="https://news.sky.com/story/coronavirus-belarus-president-refuses-to-cancel-anything-and-says-vodka-and-saunas-will-ward-off-coronavirus-11965396" rel="nofollow">Sky News: Coronavirus: Belarus president refuses to cancel anything - and says vodka and saunas will ward off COVID-19</a>.</p>
+    </li>
+    <li>
+    <p><a href="https://www.pressdemocrat.com/news/10860895-181/sonoma-county-emergency-management-director" rel="nofollow">The Press Democrat: Sonoma County emergency management director disregards coronavirus shelter-in-place order, takes family to beach</a>. Do as I say, not as I do.</p>
+    </li>
+    </ul>
+    <h2>Mar 26, 2020</h2>
+    <ul>
+    <li><a href="https://www.cbsnews.com/live-updates/coronavirus-news-latest-2020-03-26/" rel="nofollow">CBS News: U.S. surpasses China with most cases worldwide</a>. American exceptionalism strikes again. We did it!!1!</li>
+    </ul>
+    <h2>Mar 25, 2020</h2>
+    <p>My wife's parents drove <strong>direct</strong> from west central Florida to central Nova Scotia on Sunday-into-Monday, getting ahead of the looming coronavirus disaster set to hit Florida (plus wanting to stay ahead of a major snowstorm). Then I read this article today: <a href="https://www.macleans.ca/society/life/escape-from-florida-my-2400-km-drive-back-to-the-sanity-of-canada/" rel="nofollow">Escape from Florida: My 2,400-km drive back to the sanity of Canada</a>. Her folks will be in self-quarantine for the next 14 days, and their neighbors (excuse me, <em>neighbours</em>) have kindly offered to fetch and drop groceries for them. My parents and my brother and his family are still isolating at their places in eastern Tennessee. Speaking of my parents, I did ask them if they'd be willing to forgo quarantine and risk death in order to create shareholder value, but they passed on that idea.</p>
+    <p>Let's do some learning:</p>
+    <ol>
+    <li>
+    <p><a href="https://www.theatlantic.com/health/archive/2020/03/how-will-coronavirus-end/608719/" rel="nofollow">The Atlantic: How the Pandemic Will End</a>. It's full of links to other sources that you can explore further, too. Even if you skip the other links below, I recommend reading this one.</p>
+    </li>
+    <li>
+    <p><a href="https://elemental.medium.com/this-is-how-your-immune-system-reacts-to-coronavirus-cbf5271e530e" rel="nofollow">Medium: This Is How Your Immune System Reacts to Coronavirus. And what it means for treatment</a>. One of the concerning aspects of COVID-19 is the stories of it taking out perfectly healthy people in their 30's and 40's -- even 20's -- <a href="https://en.wikipedia.org/wiki/Chris_Traeger" rel="nofollow">Chris Traeger</a> types, no prior illnesses, dead within days... while others report they felt kind of down for a day or two (or weren't even symptomatic!) and then were fine. <em>That</em> uncertainty causes me a fair bit of distress.</p>
+    </li>
+    <li>
+    <p><a href="https://hackaday.com/2020/03/25/ventilators-101-what-they-do-and-how-they-work/" rel="nofollow">Hackaday: Ventilators 101: What they do and how they work</a>. Bonus: I learned some stuff about the CPAP machine I've been using for 11 months now.</p>
+    </li>
+    </ol>
+    <p>Some links:</p>
+    <ul>
+    <li>
+    <p><a href="https://thehill.com/homenews/state-watch/489562-critics-lash-out-at-florida-governor-over-lack-of-sweeping-coronavirus" rel="nofollow">The Hill: Critics hit Florida governor over lack of 'sweeping' coronavirus response</a>. Florida's demographics make it a ticking time bomb.</p>
+    </li>
+    <li>
+    <p><a href="https://www.nbcnews.com/news/us-news/louisiana-pastor-defies-coronavirus-order-draws-over-1-000-people-n1168501" rel="nofollow">NBC News: Louisiana pastor defies coronavirus order, draws over 1,000 people to services</a>. "The virus, we believe, is politically motivated." I wouldn't know how to help these people.</p>
+    </li>
+    <li>
+    <p><a href="https://www.jacksonfreepress.com/news/2020/mar/24/gov-tate-reeves-orders-limited-gatherings-today-ex/" rel="nofollow">Jackson Free Press: Governor Orders Limited Gatherings, Declares Most Businesses 'Essential,' Supersedes Local Safety Efforts</a>. tl;dr a number of municipalities were unhappy that the governor of Mississippi, Tate Reeves, wasn't doing shit, so they enacted their own restrictions. This appears to supercede those restrictions. You probably weren't planning a vacation to Mississippi <em>anyway</em> but if you were... you might hold off.</p>
+    </li>
+    </ul>
+    <h2>Mar 24, 2020</h2>
+    <p>It wasn't a good day overall. Lots of negative thoughts and despair. The person I was mentioning yesterday tested <em>negative</em> for COVID-19 but then I learned later in the day someone in my extended family tested positive (but is doing OK for the moment, thankfully). Being home-bound since March 5 and fairly anxious <strong>the whole time</strong> is having a physical impact on me. I have low-grade headache and tremors for a good portion of the day, and I'm more prone to mood swings. I'm prescribing myself longer and more frequent walks to try to cope.</p>
+    <p>Anyway, the next two weeks will be a shit show here in the US. Strap in.</p>
+    <p>Links:</p>
+    <ul>
+    <li>
+    <p><a href="https://www.cnbc.com/2020/03/24/coronavirus-indias-prime-minister-orders-nationwide-lockdown.html" rel="nofollow">CNBC: India’s prime minister orders lockdown of country of 1.3 billion people for 21 days</a>. India is now closed.</p>
+    </li>
+    <li>
+    <p><a href="https://www.theguardian.com/us-news/2020/mar/24/liberty-university-reopens-despite-coronavirus-closure-calls-jerry-falwell-jr" rel="nofollow">The Guardian: Jerry Falwell Jr defies calls for coronavirus closures and reopens Liberty University</a>. "Up to 5,000 students will be allowed to return to Liberty University’s campus after school officials confirmed the conservative Christian school based in Lynchburg, Virginia, will reopen this week." I'll keep an eye out for the follow-up story we all know is coming in around two weeks.</p>
+    </li>
+    <li>
+    <p><a href="https://www.washingtonpost.com/" rel="nofollow">Washington Post: The coronavirus isn’t mutating quickly, suggesting a vaccine would offer lasting protection</a>. Sorry about the paywall link but here's the gist: "The coronavirus is not mutating significantly as it circulates through the human population, according to scientists who are closely studying the novel pathogen’s genetic code. That relative stability suggests the virus is less likely to become more or less dangerous as it spreads, and represents encouraging news for researchers hoping to create a long-lasting vaccine." You can probably Google around to find more.</p>
+    </li>
+    <li>
+    <p><a href="https://www.buzzfeednews.com/article/stephaniemlee/coronavirus-young-age-severe-cases?bftwnews&amp;utm_term=4ldqpgc#4ldqpgc" rel="nofollow">Buzzfeed: The Coronavirus Is Sending Lots Of Younger People To The Hospital</a>. "In New York City, health officials said Friday that of 1,160 people hospitalized with COVID-19 symptoms, one in four were between ages 18 and 49."</p>
+    </li>
+    </ul>
+    <p>On the lighter side:</p>
+    <ul>
+    <li>
+    <p><a href="https://www.wafb.com/2020/03/24/waffle-house-closes-locations-across-us/" rel="nofollow">WAFB9: Waffle House closes 365 locations across the U.S.</a>. 365 locations closed, with 1627 remaining open. Maybe I should start charting this daily?</p>
+    </li>
+    <li>
+    <p><a href="https://www.cbc.ca/radio/asithappens/as-it-happens-the-monday-edition-1.5506723/p-e-i-farmer-keeps-social-distance-by-hurling-pork-products-to-hungry-customers-1.5507326" rel="nofollow">CBC: P.E.I. farmer keeps social distance by hurling pork products to hungry customers</a>.</p>
+    </li>
+    <li>
+    <p><a href="https://teleport.fm/" rel="nofollow">teleport.fm: Tired of people seeing your “home office” on Zoom? Teleport somewhere better.</a>. Backgrounds you can download for Zoom.</p>
+    </li>
+    </ul>
+    <h2>Mar 23, 2020</h2>
+    <p>I am now likely one-degree connected to someone with COVID-19; this person is symptomatic and has taken a test, but the results haven't come back yet. We haven't been near each other physically since the first few days of March. And no, this person hasn't lost their sense of taste or smell; I asked. At this point they are managing the symptoms well and statistically they have an almost 100% chance of making a full recovery.</p>
+    <p>Links:</p>
+    <ul>
+    <li><a href="https://www.france24.com/en/20200323-madrid-ice-rink-turned-into-morgue-due-to-coronavirus" rel="nofollow">France24: Madrid ice rink turned into morgue due to coronavirus</a>.</li>
+    <li><a href="https://time.com/5808407/sen-rand-paul-senate-capitol-coronavirus/" rel="nofollow">TIME: Sen. Rand Paul Remained at Work on U.S. Capitol for Six Days After Coronavirus Test</a>. Sen. Paul is a graduate of the Duke University School of Medicine. Yes, he's an M.D.</li>
+    <li><a href="https://www.fox13news.com/news/hillsborough-county-leaders-postpone-possible-stay-at-home-order-despite-mayor-castors-plea" rel="nofollow">Fox 13 Tampa: Hillsborough County leaders postpone possible 'stay-at-home' order, despite Mayor Castor's plea</a>. "[T]he motion that ultimately passed was only to further study a stay-at-home motion and a possible 10 p.m. to 5 a.m. curfew. The group will meet again on Thursday." Decisive leadership.</li>
+    <li><a href="https://www.bbc.com/news/world-asia-india-51957936" rel="nofollow">BBC News: Coronavirus: Why India's busiest rail network is being shut down</a>. "One of the world's busiest urban rail systems will be shut down for ordinary commuters from Monday morning to prevent the spread of coronavirus infection in Mumbai, one of India's most populous cities. Only government workers in "essential services" will be allowed to travel on a truncated service."</li>
+    <li><a href="https://www.seriouseats.com/2020/03/food-safety-and-coronavirus-a-comprehensive-guide.html" rel="nofollow">Serious Eats: Food Safety and Coronavirus: A Comprehensive Guide</a>. Food safety and COVID-19 is something that's been on my mind as 1) I'm missing our usual yellow curry and Pad Thai, and 2) a nearby(-ish) restaurant Flights has <a href="https://www.mercurynews.com/2020/03/23/los-gatos-restaurant-transformed-into-a-no-touch-drive-thru-grocery/" rel="nofollow">transformed into a ‘no touch,’ drive-thru grocery</a>.</li>
+    </ul>
+    <p>And lastly, people all over the internet have been dunking on these people all day, but really it's just sad and unfortunate.</p>
+    <ul>
+    <li><a href="https://www.phoenixnewtimes.com/news/covid-19-remedy-touted-by-trump-kills-arizona-man-wife-critical-11460391" rel="nofollow">Phoenix New Times: Arizona Man Dies After Trying Substance Touted by Trump to Treat COVID-19</a>.</li>
+    </ul>
+    <h2>Mar 22, 2020</h2>
+    <p>I've been yelling at people here since February 28 that a storm is coming and you should start making some plans. If you're still not convinced, I can't do anything more at this point than pity you, and hope you find the evidence you need so you can take action before you hurt someone.</p>
+    <p>That's it. I've been staring at the screen for 20 minutes trying to think of what more to write. Stay at home. Wash your hands.</p>
+    <p>Links:</p>
+    <ul>
+    <li>
+    <p><a href="https://www.cnn.com/2020/03/22/politics/rand-paul-coronavirus/index.html" rel="nofollow">CNN: Rand Paul is first senator to test positive for coronavirus</a>. He had a test (despite being asymptomatic), went to the Senate gym and pool, then received the results later today.</p>
+    </li>
+    <li>
+    <p><a href="https://twitter.com/ENT_UK/status/1241063677186449408" rel="nofollow">Twitter / The British Association of Otorhinolaryngology: Is a lost sense of smell a marker of COVID-19 infection?</a>.</p>
+    </li>
+    </ul>
+    <h2>Mar 19, 2020</h2>
+    <p>Here in a 9 county area of Northern California -- including Santa Clara County, where we live -- we've been in a shelter-in-place order for a few days now, though I've been in shelter mode since March 5 when LinkedIn sent us home. Well, <a href="https://www.marketwatch.com/story/california-governor-issues-statewide-shelter-in-place-order-2020-03-19" rel="nofollow">this evening California's governor extended shelter-in-place to the rest of California</a>, impacting some 40 million people. We can still leave homes for essential needs like food or medical care, and we can still receive deliveries from Amazon and restaurants. We can also get out and go for walks, and the kids can play in the yard, which may help preserve our sanity. <a href="https://www.airbnb.com/rooms/13019040?s=67&amp;sharer_id=7285002&amp;unique_share_id=5d9b5798-ad0c-43db-83ac-8acab29fcc19" rel="nofollow">Something like this, in the woodsy mountains and away from it all</a> is starting to look pretty appealing.</p>
+    <p>I've been feeling under the weather all day today. My energy level dropped off a cliff mid-morning, I've been doing "catch up" breaths and swallowing more than usual. In the afternoon I was running a faint fever (99.2 / 99.3) but it's possible that was just anxiety, which has been a challenge the past few weeks. I say all that, but I had a banana muffin and ice cream sandwich and felt <em>much</em> better after, so maybe it was blood sugar? I'll give it a few days and see.</p>
+    <p>Some links:</p>
+    <ul>
+    <li>
+    <p><a href="https://www.youtube.com/watch?v=rfkbv_WQtn0&amp;feature=youtu.be" rel="nofollow">YouTube/Channel 4 News: Inside intensive care unit: Italy fights coronavirus outbreak</a>. "Italian hospitals are at their absolute limit, with hundreds more deaths reported daily, and huge challenges in caring for those infected." <strong>WARNING: I'm on the fence about sharing this. You may want to skip it. It doesn't have gore or anything but may make you anxious or concerned. I wanted to highlight the heroes these medical professionals are.</strong></p>
+    </li>
+    <li>
+    <p><a href="https://www.bbc.com/news/51929628" rel="nofollow">BBC News: Coronavirus and ibuprofen: Separating fact from fiction</a>. Still trying to suss out the story with ibuprofen. Will probably avoid for now out of an abundance of caution.</p>
+    </li>
+    <li>
+    <p><a href="https://www.theguardian.com/technology/2020/mar/18/tech-execs-who-dont-agree-coronavirus-measures" rel="nofollow">The Guardian: The tech execs who don't agree with 'soul-stealing' coronavirus safety measures</a>. Don't be Tim Draper (and not just because of this). Don't be Elon Musk.</p>
+    </li>
+    <li>
+    <p><a href="https://www.theguardian.com/world/2020/mar/18/japanese-flu-drug-clearly-effective-in-treating-coronavirus-says-china" rel="nofollow">The Guardian: Japanese flu drug 'clearly effective' in treating coronavirus, says China</a>. "[F]avipiravir, developed by a subsidiary of Fujifilm, had produced encouraging outcomes in clinical trials in Wuhan and Shenzhen involving 340 patients."</p>
+    <blockquote>
+    <p>Oh and an aside about <a href="https://www.theguardian.com/us" rel="nofollow">The Guardian</a> since I linked them twice: I signed up last night to give them $10/mo as they seem to be one of the more reliable online news sources out there.</p>
+    </blockquote>
+    </li>
+    <li>
+    <p><a href="https://www.latimes.com/world-nation/story/2020-03-18/woman-who-flew-from-u-s-to-china-for-coronavirus-test-faces-criminal-charges" rel="nofollow">Los Angeles Times: Woman who flew from U.S. to China for coronavirus test faces criminal charges</a>. "The woman took fever-reducing medication before boarding a plane and lied to flight attendants, according to Beijing’s disease control center and an Air China representative, who held a news conference on Monday." "According to Chinese law, she could face up to three years of imprisonment or detention with possible forced labor, or up to seven years of prison if there are “serious consequences.” Hey don't do this.</p>
+    </li>
+    <li>
+    <p><a href="https://www.gatesnotes.com/Health/We-Are-Not-Ready-for-the-Next-Epidemic" rel="nofollow">GatesNotes: We’re Not Ready for the Next Epidemic</a>. Bill Gates gave a TED talk <em>five years ago</em> about how unprepared we were for an epidemic. Here we are.</p>
+    </li>
+    <li>
+    <p><a href="https://www.bloomberg.com/news/articles/2020-03-18/99-of-those-who-died-from-virus-had-other-illness-italy-says" rel="nofollow">Bloomberg: 99% of Those Who Died From Virus Had Other Illness, Italy Says</a>. "More than 75% had high blood pressure, about 35% had diabetes and a third suffered from heart disease." and "Almost half of the victims suffered from at least three prior illnesses and about a fourth had either one or two previous conditions."</p>
+    </li>
+    <li>
+    <p><a href="https://www.sfgate.com/bayarea/article/seniors-only-shopping-groceries-bay-area-15137311.php" rel="nofollow">SFGate: Whole Foods, Safeway among Bay Area grocery stores offering seniors-only hours</a>. This started as an article about how Zanotto's, our literally-around-the-corner grocery store, would start offering Senior Hours from 8 to 9 am, but it looks like SFGate has expanded it to include similar hours at other area stores.</p>
+    <ul>
+    <li>I went to Zanotto's last evening about 20 minutes before close and the inventory had been well picked-over. As I'm checking out, the cashier discretely asks me if I also need toilet paper, as they have some behind the counter for people who are making other purchases. I passed.
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-19-zanottos1.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-19-zanottos1.png" alt="Empty store shelves" style="max-width:100%;"></a>
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-19-zanottos2.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-19-zanottos2.png" alt="Empty store shelves" style="max-width:100%;"></a></li>
+    </ul>
+    </li>
+    <li>
+    <p>And finally, <a href="https://twitter.com/tzimmer_history/status/1238106020855066626" rel="nofollow">this is how I feel</a>:</p>
+    </li>
+    </ul>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-19-tweet.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-19-tweet.png" alt="The weirdest part of living through the #COVID19 pandemic is this strange mixture of normalcy and emergency that we’re all experiencing. I constantly feel like I’m either over- or underreacting, or really both at the exact same time. It’s surreal." style="max-width:100%;"></a></p>
+    <h2>Mar 16, 2020</h2>
+    <p>Today was the first work-from-home day that also overlapped with the kids' school-from-home day. It went <em>okay</em>.</p>
+    <p>I want to start by saying I'm <strong>super impressed</strong> with how my employer, LinkedIn, has been handling this difficult situation so far. They were <em>very</em> aggressive about promoting work-from-home early on. This is our eighth official WFH day, and they made their call well before it was patently evident it was the right one.</p>
+    <ul>
+    <li>
+    <p>Some stock market news. Today was the largest point drop of the Dow in history (−2,997), and the second largest percentage drop (−12.93%, just edging out Oct 28, 1929's -12.82%).</p>
+    </li>
+    <li>
+    <p><a href="https://www.sfchronicle.com/local-politics/article/Bay-Area-must-shelter-in-place-Only-15135014.php" rel="nofollow">San Francisco Chronicle: Bay Area orders ‘shelter in place,’ only essential businesses open in 6 counties</a>. This is where we live. "Grocery stores and pharmacies will remain open, and restaurants may stay open to provide takeout food only. Also staying open: veterinary services, gas stations and auto repair shops, hardware and other home supply stores, banks and laundry services."</p>
+    </li>
+    </ul>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-16-counties.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-16-counties.png" alt="Bay Area Counties graphic" style="max-width:100%;"></a></p>
+    <ul>
+    <li>
+    <p><a href="https://apnews.com/8089a3d0ec8f9fde971bddd7b3aa2ba1" rel="nofollow">AP: Government official: Coronavirus vaccine trial starts Monday</a>. I know it's a long way away from public use, but good to see some progress.</p>
+    </li>
+    <li>
+    <p><strong>Matt Colvin</strong> will have an SEO problem when he goes to apply for his next job. He's the guy who took a 1,300 mile road trip across Tennessee and into Kentucky to buy and hoard sanitizer and wipes. He didn't want to bring a lot of attention to it, so he <a href="https://www.nytimes.com/2020/03/14/technology/coronavirus-purell-wipes-amazon-sellers.html" rel="nofollow">did an interview and photoshoot with the New York Times</a>.</p>
+    </li>
+    <li>
+    <p>The Norwegian University of Science and Technology posted their recommendation that all overseas students return home to Norway. "This... applies for countries with poorly developed collective infrastructure, for example the USA." They have since modified the post to remove specific reference to the US, but one wishes they hadn't.</p>
+    </li>
+    </ul>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-16-ntnu.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-16-ntnu.png" alt="NTNU post" style="max-width:100%;"></a></p>
+    <ul>
+    <li>
+    <p>Heard one case where the poster's parents didn't start to take COVID-19 seriously until <a href="https://www.aarp.org/" rel="nofollow">the AARP updated their web site</a>.</p>
+    </li>
+    <li>
+    <p>Two links on the same topic of immune system response to COVID-19.</p>
+    <ul>
+    <li><a href="https://www.sciencedaily.com/releases/2014/02/140227142250.htm" rel="nofollow">Science Daily: Deadly immune 'storm' caused by emergent flu infections</a>. "Cytokine storm" has come up a few times in our work channels. "A cytokine storm is an overproduction of immune cells and their activating compounds (cytokines), which, in a flu infection, is often associated with a surge of activated immune cells into the lungs. The resulting lung inflammation and fluid buildup can lead to respiratory distress and can be contaminated by a secondary bacterial pneumonia -- often enhancing the mortality in patients."</li>
+    <li><a href="https://www.mirror.co.uk/news/uk-news/coronavirus-health-official-warns-against-21697106" rel="nofollow">Coronavirus: Health official warns against taking ibuprofen as it 'may worsen bug'</a>. tl;dr you might consider taking paracetamol aka Acetaminophen aka TYLENOL instead of ibuprofen. <strong>Do further reading if you're thinking of doing this for kids though!</strong></li>
+    </ul>
+    </li>
+    <li>
+    <p>If you're thinking of ginning up your own household sanitizer for some reason, please don't be dumb.</p>
+    </li>
+    </ul>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-16-household.jpg"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-16-household.jpg" alt="Household chemicals you don't want to mix" style="max-width:100%;"></a></p>
+    <ul>
+    <li>I'll leave you with this: <a href="https://twitter.com/BurkeCNN/status/1239223460720709633?s=20" rel="nofollow">A sign of strange times: The Pope blessing an empty St. Peter’s Square.</a></li>
+    </ul>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-16-pope.jpg"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-16-pope.jpg" alt="Pope blesses an empty St. Peter's Square" style="max-width:100%;"></a></p>
+    <h2>BONUS: Learning Resources for Kids</h2>
+    <p>An awesome parent at work shared a bunch of resources for keeping kids engaged during these strange times. Please see <a href="https://github.com/bbhart/writing/blob/master/resources-for-parents.md">Resources for Parents</a>.</p>
+    <h2>Mar 13, 2020</h2>
+    <p>I took a mental health day off from work today, and made a concerted effort to <strong>put the phone down</strong> for a good portion of the day. My anxiety has put me in a bad place over the past two weeks, and I strongly attribute it to mainlining coronavirus news. Work-from-home and the wicked stomach bug last weekend ended up with me only leaving the house for ~30 minutes over the past 8 days. Between a virtual happy hour yesterday evening with 9 or 10 work mates, my disconnecting from the news somewhat, and going on a long mountain drive today, I've been able to reset some.</p>
+    <p>Why am I so anxious? Statistically, me, my wife, and our kids will eventually catch coronavirus, feel shitty for a bit, and emerge completely fine on the other end. The anxiety stems from the perfect storm of pandemic disease, economic upheaval, and a federal government that is incompetent beyond measure. There is no template for this, and our government seems to be lacking the bright minds at the top who would be able to competently steer the ship in times of uncertainty. So I'm anxious not for me or my family, but for the people who will be injured or killed by a system that should've done a much, much better job.</p>
+    <p>Links:</p>
+    <ul>
+    <li>
+    <p><a href="https://www.theguardian.com/us-news/live/2020/mar/13/donald-trump-coronavirus-joe-biden-bernie-sanders-live-updates-news" rel="nofollow">The Guardian: Trump says he takes 'no responsibility' for coronavirus failures as he declares national emergency</a>.</p>
+    </li>
+    <li>
+    <p><a href="https://www.theverge.com/2020/3/13/21179118/google-coronavirus-testing-screening-website-drive-thru-covid-19" rel="nofollow">The Verge: Contrary to Trump’s claim, Google is not building a nationwide coronavirus screening website</a>.</p>
+    </li>
+    <li>
+    <p><a href="https://www.cusdk8.org/cms/lib/CA02218495/Centricity/Domain/3585/3-13-20%20covid%20message%20school%20closure.pdf" rel="nofollow">Cupertino Union School District (CUSD)</a> -- my kids' school district -- announced today they're closing schools, effective Monday. For now they are closed through April 3, and the District is coordinating with other area school districts to try to move up Spring Break to be at the tail end of the closure period.</p>
+    </li>
+    <li>
+    <p><a href="https://www.cbsnews.com/news/johns-hopkins-develops-its-own-coronavirus-test/" rel="nofollow">CBS News: Johns Hopkins develops its own coronavirus test</a>. It's great to have some people who believe in science hanging out in universities who can quickly help out when the need arises. I've read about a few other institutions, such as Stanford and the University of Washington, who also have their own tests and are continuing to improve on the time to get results.</p>
+    </li>
+    </ul>
+    <p>I'm going to stop updating stats on the number of cases and deaths as they're about to explode and there are other sites for that grim information.</p>
+    <h2>Mar 12, 2020</h2>
+    <p>Santa Clara County started updating their site again, with a new format. There are <a href="https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/home.aspx" rel="nofollow">66 confirmed cases now</a>, but in reality it's much higher <strong>because nobody is testing</strong>.</p>
+    <p>Canceled/postponed/closed/announced closed:</p>
+    <ul>
+    <li>The NBA</li>
+    <li>The NCAA Finals</li>
+    <li>The MLB</li>
+    <li>The NHL</li>
+    <li>Some travel between the US and Europe</li>
+    <li>Disneyland, Disney World</li>
+    <li>San Francisco Unified School District</li>
+    <li>Seattle School District</li>
+    <li><a href="https://www.chicagotribune.com/coronavirus/ct-nw-coronavirus-united-states-school-closings-20200312-sh2d5vi525drvcf5dwm7hnebru-story.html" rel="nofollow">All schools in Ohio, Maryland, and Kentucky</a></li>
+    <li><a href="https://www.washingtonpost.com/entertainment/theater_dance/broadway-to-go-dark-as-coronavirus-fears-intensify/2020/03/12/6e007114-648e-11ea-b3fc-7841686c5c57_story.html" rel="nofollow">Broadway shows in NYC</a></li>
+    </ul>
+    <p>These are the ones announced <em>in the last 24 hours</em>.</p>
+    <p>Today was the largest daily point loss of the Dow Jones Industrial Average ever: -23522 points, or down 9.99%. The second largest point drop was three days ago, on March 9. The third largest was yesterday. It's the fourth largest <em>percentage</em> drop ever, missing Oct 29, 1929, by less than 2%. <a href="https://en.wikipedia.org/wiki/List_of_largest_daily_changes_in_the_Dow_Jones_Industrial_Average" rel="nofollow">1</a></p>
+    <p>On a personal note, I don't know how to convince more people they need to pay attention to this. Still think "It's just like the flu..."? Start paying attention.</p>
+    <h2>Mar 11, 2020</h2>
+    <p>Links:</p>
+    <ul>
+    <li>
+    <p><a href="https://www.bbc.com/news/world-51839944" rel="nofollow">BBC: Coronavirus confirmed as pandemic by World Health Organization</a>. "[T]he number of cases outside China had increased 13-fold in two weeks."</p>
+    </li>
+    <li>
+    <p><a href="https://qz.com/1816060/a-chart-of-the-1918-spanish-flu-shows-why-social-distancing-works/" rel="nofollow">Quartz: This chart of the 1918 Spanish flu shows why social distancing works</a>. My employer, LinkedIn, continues to have a work-from-home policy for everyone that is able.</p>
+    </li>
+    <li>
+    <p>A little concerning: Santa Clara County (mine) seems to have stopped updating their <a href="https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/known-cases-of-coronavirus.aspx" rel="nofollow">coronavirus page</a> after having kept it diligently updated since January 31.</p>
+    </li>
+    <li>
+    <p><a href="https://www.seattletimes.com/seattle-news/education/seattle-public-schools-to-close-for-two-weeks-in-light-of-coronavirus-concerns/" rel="nofollow">Seattle Times: Seattle Public Schools to close for two weeks in light of coronavirus concerns</a>. Starts tomorrow.</p>
+    </li>
+    <li>
+    <p><a href="https://www.npr.org/sections/health-shots/2020/03/10/814099444/new-york-creates-containment-area-around-cluster-in-new-rochelle" rel="nofollow">NPR: Coronavirus: New York Creates 'Containment Area' Around Cluster In New Rochelle</a>. "A synagogue in the city has become the epicenter of an outbreak in Westchester County — which accounts for 108 of New York state's 173 coronavirus cases."</p>
+    </li>
+    </ul>
+    <h2>Mar 10, 2020</h2>
+    <ul>
+    <li>
+    <p>I've had stomach flu since the evening of Saturday 7th. Sunday is easily in my top 10 worst in recent memory. On Monday I dared to eat some oyster crackers and that went OK. Today -- Tuesday -- I ate an egg and some more crackers. I'm probably at 75% health but glad for it considering the past few days. Definitely wasn't the coronavirus, which I'm not looking forward to (I feel like it's unavoidable at this point, even with social distancing and hand-washing), but also want to get out of the way.</p>
+    </li>
+    <li>
+    <p>Son is home from school today with a slight fever, runny nose, and joint aches.</p>
+    </li>
+    <li>
+    <p>The stock market had its largest one day point drop yesterday. It's up a little today but it's a trap.</p>
+    </li>
+    <li>
+    <p>As of March 9, in Santa Clara County there are 43 confirmed cases and 1 death. 21 currently hospitalized, with 10 in the ICU. Median age 58 years (range 20-89). Median age of hospitalized cases 66 (range 20-89). From <a href="https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Documents/Infographic-Santa-Clara-County-CoronaVirus_8.pdf" rel="nofollow">here</a>.</p>
+    </li>
+    <li>
+    <p><a href="https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/order-cancellation-mass-gatherings.aspx" rel="nofollow">Santa Clara County: Order Requiring Cancellation of Mass Gatherings of More than 1,000 Persons</a>. The actual text of the order is <a href="https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/order-health-officer-03092020.aspx" rel="nofollow">here</a>. "Effective as of 12:00 a.m. on Wednesday, March 11, 2020, and continuing until 11:59 m. on March 31, 2020, public or private mass gatherings, defined below, are hereby prohibited in Santa Clara County ("County")."</p>
+    </li>
+    <li>
+    <p><a href="https://twitter.com/hashtag/FlattenTheCurve" rel="nofollow">#FlattenTheCurve</a> is trending on twitter today. See the chart from Mar 7 below on US healthcare system capacity.</p>
+    </li>
+    <li>
+    <p><a href="https://www.npr.org/sections/goatsandsoda/2020/03/09/813791575/italy-expands-quarantine-measures-nationwide-to-stem-spread-of-coronavirus" rel="nofollow">NPR: Italy expands quarantine measures nationwide to stem spread of coronavirus</a>.</p>
+    </li>
+    <li>
+    <p><a href="https://www.usatoday.com/story/news/politics/2020/03/09/trump-has-not-been-tested-coronavirus-white-house-said/5005083002/" rel="nofollow">USA Today: Trump has not been tested for coronavirus, White House says, despite indirect contact</a>. Also, <a href="https://www.nytimes.com/2020/03/10/business/economy/coronavirus-fema-trump.html" rel="nofollow">Trump Pitches Coronavirus-Related Stimulus Package on Capitol Hill</a>.</p>
+    </li>
+    </ul>
+    <h2>Mar 7, 2020</h2>
+    <p>I needed a few days away from writing, though I've been spending a considerable amount of time reading and conversing about coronavirus.</p>
+    <p>Let's start with this:</p>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-7-capacity.jpg"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-7-capacity.jpg" alt="US healthcare system capacity illustration" style="max-width:100%;"></a></p>
+    <p>I suspect this is why my employer -- and many others in this area -- have either mandated or strongly encouraged their employees to work from home. It's an assumption that we'll <em>all</em> be coming down with COVID-19 but that it needs to be spread out in order to have sufficient resourcing to keep the business running.</p>
+    <p>For me, there are two schools of thought here:</p>
+    <ol>
+    <li>Catch coronavirus sooner rather than later, so that if I do need to see a doctor, I can do so before the health system gets overstressed. Not saying that I'd <em>actively seek out</em> to get COVID-19, but that I wouldn't be Howard Hughes paranoid about germs.</li>
+    <li>Go full hermit to push back catching it as long as possible. It would have to be timed so that it's below the dotted line above. This means staying in, not letting the kids have friends over, eating from our stock of food, and probably getting on each other's nerves a lot. The idea here is to give the healthcare system a chance to scale up and/or work through cases, and scientists time to develop a vaccine.</li>
+    </ol>
+    <p>This cannot be contained at this point. US political leaders are either in denial or too stupid to realize this (flip a coin).</p>
+    <p>Assorted links from the past few days:</p>
+    <ul>
+    <li><a href="https://newsroom.questdiagnostics.com/2020-03-05-Quest-Diagnostics-to-Launch-Coronavirus-Disease-2019-COVID-19-Test" rel="nofollow">Quest Diagnostics to Launch Coronavirus Disease 2019 (COVID-19) Test</a>. Quest has a large network so this is welcome news.</li>
+    <li><a href="https://www.thelancet.com/journals/lanres/article/PIIS2213-2600(20)30071-0/fulltext" rel="nofollow">The Lancet: Therapeutic and triage strategies for 2019 novel coronavirus disease in fever clinics</a>. Includes an informative flowchart for triaging patients.</li>
+    <li><a href="https://futurism.com/the-byte/coronavirus-force-funerals-livestreamed" rel="nofollow">Futurism: Coronavirus could force funerals to be livestreamed</a>.</li>
+    <li><a href="https://med.stanford.edu/news/all-news/2020/03/stanford-medicine-COVID-19-test-now-in-use.html" rel="nofollow">Stanford Medicine: Stanford Medicine COVID-19 test now in use</a>. "The Stanford Clinical Virology Laboratory has deployed an in-house diagnostic test for the virus that causes COVID-19. Rapid identification of infected people could help limit the spread of the virus." I also read a few days ago that University of Washington has also been working on a test since December and that it's either available now or would be shortly.</li>
+    <li><a href="https://www.sfchronicle.com/bayarea/article/Wuhan-coronavirus-Here-s-what-we-know-15000563.php" rel="nofollow">San Francisco Chronicle: Coronavirus hits Bay Area: What residents need to know</a>. The Chronicle dropped the paywall on this article and has been updating it.</li>
+    </ul>
+    <h2>Mar 4, 2020</h2>
+    <p>Definitely an escalation in response today, at least here in the SF Bay Area and in Seattle.</p>
+    <p>LinkedIn (my employer) this evening advised that "all Bay Area employees who are in a job that can be done from home should do so through the end of March, unless further guidance is provided."</p>
+    <p>A friend in the Seattle area shared this evening that his daughter's school district has closed schools indefinitely. They're going to switch to <a href="https://classroom.google.com/u/0/" rel="nofollow">Google Classroom</a>.</p>
+    <p>Our broken federal government is going to treat it like the Puerto Rico hurricane. This virus will disproportionately impact the most vulnerable among us, who can't afford to take time off from work, or afford to get tested, or even arrange care for their child whose school has been shut down. The school district may do remote classes, but the family might not be able to afford a laptop and Internet to connect.</p>
+    <ul>
+    <li><a href="https://www.sccgov.org/sites/phd/DiseaseInformation/novel-coronavirus/Pages/known-cases-of-coronavirus.aspx" rel="nofollow">Santa Clara County: 3 new cases, bringing total to 14</a></li>
+    <li><a href="https://www.latimes.com/california/story/2020-03-04/los-angeles-county-declares-coronavirus-emergency-6-new-cases" rel="nofollow">Los Angeles Times: California declares coronavirus emergency amid worries over Grand Princess cruise ship passengers</a>. "Gov. Gavin Newsom declared a state of emergency over the novel coronavirus after a California man died after falling ill with the virus while on a cruise ship. Officials are trying to locate hundreds of other Californians who disembarked from the Grand Princess ship in San Francisco last month after a trip to Mexico."</li>
+    <li><a href="https://www.who.int/dg/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---3-march-2020" rel="nofollow">WHO: WHO Director-General's opening remarks at the media briefing on COVID-19 - 3 March 2020</a>. "[T]here are some important differences between COVID-19 and influenza... First, COVID-19 does not transmit as efficiently as influenza, from the data we have so far... The second major difference is that COVID-19 causes more severe disease than seasonal influenza... Third, we have vaccines and therapeutics for seasonal flu, but at the moment there is no vaccine and no specific treatment for COVID-19. However, clinical trials of therapeutics are now being done, and more than 20 vaccines are in development."</li>
+    <li><a href="https://news.yahoo.com/who-world-health-organisation-coronavirus-banknotes-warning-111019361.html?soc_src=hl-viewer&amp;soc_trk=fb" rel="nofollow">Yahoo News: Banknotes may be spreading coronavirus, World Health Organisation warns</a>. Not everyone has the option to use a card.</li>
+    </ul>
+    <p>I take some comfort in the fact that I don't have to worry much about my children getting desperately sick.</p>
+    <h2>Mar 3, 2020</h2>
+    <p>"Unusual times."</p>
+    <p>There was a video circulating around a month ago where drones in China were harassing people who were out during quarantine. The drones had speakers attached and nearby pilots would inform people they should go home, wash their hands, and put on their masks. It was an interesting use of tech -- novel but also a little dystopian. The phrase "these are unusual times" is heard a few times. Maybe it's the translation, but it's a phrase that's stuck with me the past four weeks, and one I find myself uttering to myself more and more.</p>
+    <p>I woke up not feeling amazing, but the fever was gone and I had no other symptoms, so I went to work.</p>
+    <ul>
+    <li>
+    <p><a href="https://www.kron4.com/news/bay-area/santa-clara-county-confirms-2-new-coronavirus-cases/" rel="nofollow">KRON4: Santa Clara County confirms 2 new coronavirus cases</a>, bringing the total confirmed to 11. The two new people are in self-quarantine.</p>
+    </li>
+    <li>
+    <p><a href="https://www.buzzfeednews.com/article/paulmcleod/senate-coronavirus-congress-plan" rel="nofollow">Buzzfeed: Senators Insist They Will Be Fine During A Coronavirus Outbreak And Won’t Need To Shut Down Congress</a>. <code>‾\_(ツ)_/‾</code></p>
+    </li>
+    <li>
+    <p><a href="https://www.inquirer.com/health/coronavirus-children-death-flu-immune-20200219.html" rel="nofollow">The Philadelphia Inquirer: The coronavirus seems to be mild in most children, but scientists are not sure why</a>. This one's a little older, from Feb 19. It's possible there's newer information out. I'll have to check.</p>
+    </li>
+    <li>
+    <p><a href="https://www.vox.com/2020/3/2/21161067/coronavirus-covid19-china" rel="nofollow">Vox: China’s cases of Covid-19 are finally declining. A WHO expert explains why.</a>.</p>
+    </li>
+    </ul>
+    <p>Our internal #coronavirus slack channel exploded today, jumping from ~80 in the morning to ~250 by end of day. As you might imagine, there was lots of chatter there all day.</p>
+    <p>Coronavirus precautions at work are a mixed bag. "Foot grabs" have magically appeared on restroom doors in the last day or so, which is fine for my building, but less fine for the buildings with latching restroom door handles. There are additional hand sanitizer stations at the entrances to our cafes now, but nobody posted to strongly encourage (or guilt) people into using them. (They could learn some lessons from the cruise industry here, where they're pretty militant about it.) Office supply cabinets have been raided for hand sanitizers. I have some at my desk I used a few times, and I've been focused on not touching my face.</p>
+    <p>Lastly, an email went out to all of LinkedIn's ~14,000+ employees late in the evening from our head of HR sharing updates on how the company is managing coronavirus response. Several sales offices around the world are closed out of an abundance of caution, and HR opened the door for people who wish to work from home from now until March 9 (a date which I assume will be extended).</p>
+    <p>Unusual times.</p>
+    <h2>Mar 2, 2020</h2>
+    <p>I woke up at 3am feeling very warm despite us keeping the house at 62F overnight. Sleep was hit-and-miss from there on until I roused the kids at 6:50am. It didn't occur to me to check my temperature until 8:15am or so; I figured I was miserable from bad sleep. Ear thermometer read 100.7 in one ear and 101.1 in the other. I stayed home from work. A mid-afternoon check showed me at 102.1.</p>
+    <p>As of 2:45pm, my symptoms are 102.1 fever and very mild joint aches. Breathing seems fine. Sinuses are somewhat caked but not necessarily worse than average for the dry air here.</p>
+    <p>Some links from today:</p>
+    <ul>
+    <li><a href="https://www.tampabay.com/florida-politics/buzz/2020/03/02/first-patients-in-florida-test-positive-for-coronavirus/" rel="nofollow">Tampa Bay Times: Florida’s first coronavirus cases found in Hillsborough and Manatee counties</a>.</li>
+    <li>From Twitter, <a href="https://twitter.com/juddlegum/status/1234536619270688768" rel="nofollow">The CDC has stopped disclosing the number of Americans tested for coronavirus.</a>, which would be concerning.</li>
+    <li><a href="https://www.alaraby.co.uk/english/news/2020/3/1/watch-iran-pilgrims-taunt-coronavirus-by-licking-religious-shrines" rel="nofollow">The New Arab: WATCH: Iranian pilgrims taunt coronavirus with ‘communal licking’ of religious shrines despite outbreak</a>. Not ideal.</li>
+    <li>From Twitter, <a href="https://twitter.com/stevewoz/status/1234575727678435328" rel="nofollow">could Steve Wozniak be NorCal patient zero?</a></li>
+    </ul>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-2-woz.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-2-woz.png" alt="Steve Wozniak tweet" style="max-width:100%;"></a></p>
+    <h2>Mar 1, 2020</h2>
+    <ul>
+    <li><a href="https://www.sciencedirect.com/science/article/pii/S2589750019302225" rel="nofollow">ScienceDirect: Harnessing wearable device data to improve state-level real-time surveillance of influenza-like illness in the USA: a population-based study</a>. tl;dr there's evidence to suggest influenza-like illnesses could be tracked by analyzing resting heart rate and sleep data from FitBit/Apple Watch type devices.</li>
+    <li><a href="https://www.health.harvard.edu/blog/as-coronavirus-spreads-many-questions-and-some-answers-2020022719004" rel="nofollow">Harvard Medical School / Harvard Health Blog: As coronavirus spreads, many questions and some answers</a>. FAQ and answers from an MD.</li>
+    <li><a href="https://earthobservatory.nasa.gov/images/146362/airborne-nitrogen-dioxide-plummets-over-china" rel="nofollow">NASA: Airborne Nitrogen Dioxide Plummets Over China</a>.</li>
+    </ul>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-mar-1-nitrogen-drop.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-mar-1-nitrogen-drop.png" alt="Nitrogen levels drop over China" style="max-width:100%;"></a></p>
+    <p>Later in the day:</p>
+    <ul>
+    <li><a href="https://www.sccgov.org/sites/phd/news/Pages/three-new-covid-19-cases-3-1-2020.aspx" rel="nofollow">Santa Clara County: Three New Cases of COVID-19 in Santa Clara County</a>. "The fifth case is an adult woman with chronic health conditions who is hospitalized". "The sixth and seventh cases are a husband and wife. Both are hospitalized, and the husband has chronic health conditions."</li>
+    <li><a href="https://www.ucdavis.edu/news/coronavirus-patient-and-precautions-uc-davis-medical-center/" rel="nofollow">Coronavirus Patient and Precautions at UC Davis Medical Center</a>. Looks like UC Davis may have initially missed the first community exposure case in California. They're being a little vague with the language. They don't say when the patient arrived, but then say "Sunday (Feb. 23), the CDC ordered COVID-19 testing of the patient". It's not clear how much time elapsed between when the patient was admitted and the CDC ordered the test, and I haven't dug further.</li>
+    </ul>
+    <h2>Feb 29, 2020</h2>
+    <p>Picked up a little more food to have around the house, but not to full prepper level or anything.</p>
+    <p>Today I'm around 80% confident schools will close either late this week (start date of 3/5 or 3/6) or early next week, either
+    through direct action of the CUSD School Board, or indirectly due to unprecedented absences.</p>
+    <p>COVID-19 has accelerated locally:</p>
+    <ul>
+    <li><a href="https://www.losaltosonline.com/news/sections/news/61987-coronavirus-victim-treated-at-el-camino-hospital" rel="nofollow">Los Altos Town Crier: Coronavirus patient treated at El Camino Hospital</a>. At ~3.5 miles from our house, this is our nearest hospital, and the one we would go to if needed</li>
+    <li><a href="https://www.bloomberg.com/news/articles/2020-02-28/germany-boosts-border-checks-google-scraps-event-virus-update" rel="nofollow">Bloomberg: First Death Reported in U.S.</a>. Washington State, man in his 50s. [Edit 3/1/20: this was originally reported as a woman in her 50s.]</li>
+    <li><a href="https://www.paloaltoonline.com/news/2020/02/29/fourth-case-of-coronavirus-found-in-santa-clara-county" rel="nofollow">Palo Alto Online: Fourth case of coronavirus found in Santa Clara County</a>. "The fourth case involves a woman who is a 'household contact' of the woman who is the county’s third case" and "The woman who is the county’s fourth case is not in the hospital or ill."</li>
+    <li>Not news: <a href="https://twitter.com/atrupar/status/1233423437286211585?s=21" rel="nofollow">Twitter @atrupar: Fox News just interviewed a Pennsylvania man who went through the coronavirus quarantine process -- but he couldn't stop coughing during the interview <g-emoji class="g-emoji" alias="flushed" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f633.png">😳</g-emoji></a> -- excellent fathering.</li>
+    </ul>
+    <p>Housewarming party with friends this evening in Santa Clara; while COVID-19 came up in conversation, nobody seemed terribly concerned.</p>
+    <h2>Feb 28, 2020</h2>
+    <ul>
+    <li><a href="https://www.cnbc.com/2020/02/28/who-raises-risk-assessment-of-coronavirus-to-very-high-at-global-level.html" rel="nofollow">CNBC: WHO raises coronavirus threat assessment to its highest level: ‘Wake up. Get ready. This virus may be on its way’</a></li>
+    <li><a href="https://www.thestreet.com/investing/apple-tim-cook-chinese-factories-getting-back-to-normal" rel="nofollow">TheStreet: Apple’s Tim Cook: Our Factories in China Are ‘Getting Back to Normal’</a></li>
+    <li><a href="https://www.statnews.com/2020/02/28/california-oregon-coronavirus-case-community-spread/" rel="nofollow">Stat: Four new coronavirus cases in Pacific Northwest suggest community spread of the disease</a>. Includes a new case, the second overall, in Santa Clara (CA) county -- where we live</li>
+    <li><a href="https://www.kron4.com/news/bay-area/2-palo-alto-students-sent-home-after-possible-exposure-to-coronavirus/" rel="nofollow">KRON4: 2 Palo Alto students sent home after possible exposure to coronavirus</a></li>
+    <li><a href="https://www.sccgov.org/sites/phd/news/Pages/third-novel-coronavirus-case-02-2020.aspx" rel="nofollow">Santa Clara County (CA) Public Health: County of Santa Clara Public Health Department Reports Third Case of COVID-19</a>. This "third case had no known exposure to the virus through travel or close contact with a known infected individual"</li>
+    </ul>
+    <p>The above were posted while I was at work. I headed toward home around 6:15pm and stopped at Smart &amp; Final, which
+    is a hybrid grocery/warehouse store near the house. Many canned vegetables were picked over, lots of beans still available,
+    and most of the bulk bags of rice were gone.</p>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/bbhart/writing/blob/master/assets/2020-feb-28-smartfinal.png"><img src="https://github.com/bbhart/writing/raw/master/assets/2020-feb-28-smartfinal.png" alt="Empty shelves at south Sunnyvale Smart and Final store" style="max-width:100%;"></a></p>
+    <p>The store was above-average busy, and they had 3 registers going... unusual for this store.</p>
+    <p>No actual evidence for this, but my gut tells me Santa Clara County probably went over the tipping point a few days ago
+    and we just haven't realized it yet.</p>
+    <h2>Feb 27, 2020</h2>
+    <p>Observed on Amazon that <a href="https://www.amazon.com/stores/node/2596881011?_encoding=UTF8&amp;field-lbr_brands_browse-bin=Mountain%20House&amp;ref_=bl_dp_s_web_2596881011" rel="nofollow">Mountain House freeze dried foods</a> are now backordered from one to three months.</p>
+    </article>
+      </div>
+
+
+    </div>
+
+    <!-- Content -->
+
+    <!-- Footer -->
+    <footer class="footer fixed-bottom container">
+      <div class="footer-copyright text-center py-3">© 2020 Copyright Brian Hart</div>
+    </footer>
+    <!-- Footer -->
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+
