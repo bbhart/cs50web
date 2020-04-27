@@ -1,0 +1,10 @@
+table#countries th {
+  background: darkblue;
+  color: white;
+}
+table#countries th, table#countries td {
+  padding-left: 15px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=brian-custom.css.map */
